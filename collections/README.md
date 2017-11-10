@@ -21,7 +21,7 @@ bundle install
 Migrate the database:
 ```
 rake db:create
-rake db:migrate
+
 ```
 
 ## Custom Rake command
