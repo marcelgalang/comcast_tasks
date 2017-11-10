@@ -1,0 +1,14 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Capacity:</strong>
+  <%= @basket.capacity %>
+</p>
+
+<p>
+  <strong>Fill rate:</strong>
+  <%= @basket.fill_rate %>
+</p>
+
+<%= link_to 'Edit', edit_basket_path(@basket) %> |
+<%= link_to 'Back', baskets_path %>
