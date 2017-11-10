@@ -1,0 +1,88 @@
+Started GET "/" for ::1 at 2017-11-06 18:48:22 -0500
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /Users/marcelgalang/.rvm/gems/ruby-2.3.0/gems/railties-5.1.4/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/marcelgalang/.rvm/gems/ruby-2.3.0/gems/railties-5.1.4/lib/rails/templates/rails/welcome/index.html.erb (4.5ms)
+Completed 200 OK in 236ms (Views: 10.3ms)
+
+
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (1.2ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL PRIMARY KEY)[0m
+  [1m[35m (1.0ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" varchar NOT NULL PRIMARY KEY, "value" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreateApples (20171107170618)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.4ms)[0m  [1m[35mCREATE TABLE "apples" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20171107170618"]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.2ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.8ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["key", "environment"], ["value", "development"], ["created_at", "2017-11-07 17:07:37.932384"], ["updated_at", "2017-11-07 17:07:37.932384"]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "apples" ("created_at", "updated_at") VALUES (?, ?)[0m  [["created_at", "2017-11-07 17:46:02.240001"], ["updated_at", "2017-11-07 17:46:02.240001"]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "apples" ("created_at", "updated_at") VALUES (?, ?)[0m  [["created_at", "2017-11-07 17:47:00.273516"], ["updated_at", "2017-11-07 17:47:00.273516"]]
+  [1m[35m (1.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.6ms)[0m  [1m[32mINSERT INTO "apples" ("created_at", "updated_at") VALUES (?, ?)[0m  [["created_at", "2017-11-07 17:47:17.579003"], ["updated_at", "2017-11-07 17:47:17.579003"]]
+  [1m[35m (2.3ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.5ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (1.8ms)[0m  [1m[32mINSERT INTO "apples" ("created_at", "updated_at") VALUES (?, ?)[0m  [["created_at", "2017-11-07 17:48:22.826520"], ["updated_at", "2017-11-07 17:48:22.826520"]]
+  [1m[35m (1.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "apples" ("created_at", "updated_at") VALUES (?, ?)[0m  [["created_at", "2017-11-07 17:54:14.602319"], ["updated_at", "2017-11-07 17:54:14.602319"]]
+  [1m[35m (4.3ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "apples" ("created_at", "updated_at") VALUES (?, ?)[0m  [["created_at", "2017-11-07 17:54:48.776455"], ["updated_at", "2017-11-07 17:54:48.776455"]]
+  [1m[35m (1.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "apples" ("created_at", "updated_at") VALUES (?, ?)[0m  [["created_at", "2017-11-07 17:54:57.355453"], ["updated_at", "2017-11-07 17:54:57.355453"]]
+  [1m[35m (1.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "apples" ("created_at", "updated_at") VALUES (?, ?)[0m  [["created_at", "2017-11-07 17:55:48.895336"], ["updated_at", "2017-11-07 17:55:48.895336"]]
+  [1m[35m (1.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "apples" ("created_at", "updated_at") VALUES (?, ?)[0m  [["created_at", "2017-11-07 17:57:30.346344"], ["updated_at", "2017-11-07 17:57:30.346344"]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "apples" ("created_at", "updated_at") VALUES (?, ?)[0m  [["created_at", "2017-11-07 17:57:54.701127"], ["updated_at", "2017-11-07 17:57:54.701127"]]
+  [1m[35m (1.4ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "apples" ("created_at", "updated_at") VALUES (?, ?)[0m  [["created_at", "2017-11-07 17:58:58.798624"], ["updated_at", "2017-11-07 17:58:58.798624"]]
+  [1m[35m (1.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreateOranges (20171107180022)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.5ms)[0m  [1m[35mCREATE TABLE "oranges" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20171107180022"]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.5ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "oranges" ("created_at", "updated_at") VALUES (?, ?)[0m  [["created_at", "2017-11-07 18:01:39.065782"], ["updated_at", "2017-11-07 18:01:39.065782"]]
+  [1m[35m (1.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.8ms)[0m  [1m[32mINSERT INTO "apples" ("created_at", "updated_at") VALUES (?, ?)[0m  [["created_at", "2017-11-07 21:07:15.864890"], ["updated_at", "2017-11-07 21:07:15.864890"]]
+  [1m[35m (2.3ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "apples" ("created_at", "updated_at") VALUES (?, ?)[0m  [["created_at", "2017-11-07 21:20:37.798137"], ["updated_at", "2017-11-07 21:20:37.798137"]]
+  [1m[35m (2.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.6ms)[0m  [1m[32mINSERT INTO "oranges" ("created_at", "updated_at") VALUES (?, ?)[0m  [["created_at", "2017-11-07 21:20:47.434353"], ["updated_at", "2017-11-07 21:20:47.434353"]]
+  [1m[35m (1.4ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "apples" ("created_at", "updated_at") VALUES (?, ?)[0m  [["created_at", "2017-11-07 21:22:14.504303"], ["updated_at", "2017-11-07 21:22:14.504303"]]
+  [1m[35m (1.4ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (1.4ms)[0m  [1m[32mINSERT INTO "apples" ("created_at", "updated_at") VALUES (?, ?)[0m  [["created_at", "2017-11-09 19:32:58.941630"], ["updated_at", "2017-11-09 19:32:58.941630"]]
+  [1m[35m (2.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "apples" ("created_at", "updated_at") VALUES (?, ?)[0m  [["created_at", "2017-11-09 19:33:44.963050"], ["updated_at", "2017-11-09 19:33:44.963050"]]
+  [1m[35m (1.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (1.2ms)[0m  [1m[32mINSERT INTO "apples" ("created_at", "updated_at") VALUES (?, ?)[0m  [["created_at", "2017-11-10 15:31:07.946088"], ["updated_at", "2017-11-10 15:31:07.946088"]]
+  [1m[35m (2.2ms)[0m  [1m[36mcommit transaction[0m
